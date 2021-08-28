@@ -8,11 +8,18 @@ class  Person  {
 		console.log('Hello my name is ' + this.name + ' and I am ' + this.race )
 }
 
+	introduce(person) {
+		console.log(`Hello ${person} it is nice to meet you`)
+	}
+
 }
 var  eddie = new Person('Eddie', 'white')
-
+var joolie = new Person('Joolie', 'white')
 
 eddie.greeting()
+joolie.greeting()
+eddie.introduce(joolie.name)	
+
 
 
 
